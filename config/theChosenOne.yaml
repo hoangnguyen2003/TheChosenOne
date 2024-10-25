@@ -9,11 +9,11 @@ repeats: 1
 save_as_full_pipeline: true
 validation_prompt: a sticker of <$V$>
 caption_column: text
-resolution: 1024
+resolution: 512
 random_flip: true
 train_batch_size: 1
 num_train_epochs: 1
-checkpointing_steps: 250
+checkpointing_steps: 500
 learning_rate: 0.00003
 lr_scheduler: constant
 lr_warmup_steps: 0
