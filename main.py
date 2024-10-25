@@ -258,7 +258,8 @@ def load_trained_pipeline(model_path = None, load_lora=True, lora_path=None):
             pipe.load_lora_weights(lora_path)
     else:
         pipe = DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0")
-    pipe.to("cuda")
+    # pipe.to("cuda")
+    pipe.enable_model_cpu_offload()
     return pipe
 
 
