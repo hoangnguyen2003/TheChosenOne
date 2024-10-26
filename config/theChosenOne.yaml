@@ -9,7 +9,7 @@ repeats: 1
 save_as_full_pipeline: true
 validation_prompt: a sticker of <$V$>
 caption_column: text
-resolution: 512
+resolution: 1024
 random_flip: true
 train_batch_size: 1
 num_train_epochs: 1
